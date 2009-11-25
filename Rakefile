@@ -1,14 +1,14 @@
-require 'rubygems'
+# -*- coding: utf-8 -*-
 require 'rake'
 
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "bancomer-activemerchant"
+    gem.name = "bancomer-active_merchant"
     gem.summary = %Q{Bancomer Integration for ActiveMerchant}
     gem.description = %Q{A plugin for ActiveMerchant to provide Bancomer Integration}
     gem.email = "calas@railsdog.com"
-    gem.homepage = "http://github.com/calas/bancomer-activemerchant"
+    gem.homepage = "http://github.com/calas/bancomer-active_merchant"
     gem.authors = ["Jorge Calás"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
@@ -46,7 +46,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "bancomer-activemerchant #{version}"
+  rdoc.title = "bancomer-active_merchant #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
