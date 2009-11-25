@@ -6,7 +6,7 @@ module ActiveMerchant #:nodoc:
       module Bancomer
         class Notification < ActiveMerchant::Billing::Integrations::Notification
           ['Ds_Date', 'Ds_Hour', 'Ds_Amount', 'Ds_Currency',
-           'Ds_Order', 'Ds_MerchantCodeb', 'Ds_Terminal',
+           'Ds_Order', 'Ds_MerchantCode', 'Ds_Terminal',
            'Ds_Signature', 'Ds_Response', 'Ds_MerchantData',
            'Ds_SecurePayment', 'Ds_TransactionType',
            'Ds_ConsumerLanguage', 'Ds_ErrorCode' ].each do |attr|
