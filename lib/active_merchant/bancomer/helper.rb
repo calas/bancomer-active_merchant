@@ -9,7 +9,7 @@ module ActiveMerchant #:nodoc:
             add_field('Ds_Merchant_Currency', 484)
             add_field('Ds_Merchant_TransactionType', 0)
             add_field('Ds_Merchant_Order', format_order_number(order))
-            add_field('Ds_Merchant_MerchantCode', account)
+            add_field('Ds_Merchant_MerchantCode', account.to_s.gsub(/\./, ''))
             add_field('Ds_Merchant_Terminal', 1)
           end
 
