@@ -12,7 +12,7 @@ class BancomerHelperTest < Test::Unit::TestCase
   include ActiveMerchant::Billing::Integrations
 
   def setup
-    @helper = Bancomer::Helper.new('R987654321','1234567', :amount => 500)
+    @helper = Bancomer::Helper.new('R987654321','1234567', :amount => 5.00)
     @helper.sha1secret "mysecretsha1string"
     @helper.return_url 'http://example.com/ok'
     @helper.cancel_return_url 'http://example.com/cancel'
