@@ -12,7 +12,7 @@ module ActiveMerchant #:nodoc:
             add_field('Ds_Merchant_Order', format_order_number(order))
             add_field('Ds_Merchant_MerchantCode', account)
             add_field('Ds_Merchant_Terminal', 1)
-            add_field('Ds_Merchant_Amount', options[:amount].to_money.cents)
+            add_field('Ds_Merchant_Amount', options[:amount].to_money.cents.to_i)
           end
 
           # Limited to 12 digits max
